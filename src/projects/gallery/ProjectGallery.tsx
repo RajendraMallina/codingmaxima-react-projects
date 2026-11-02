@@ -16,7 +16,7 @@ export default function ProjectGallery() {
           <p className="gallery-eyebrow"><span className="live-dot" aria-hidden="true" /> YOUR CREATIVE SPACE TO PRACTICE</p>
           <h1 id="gallery-title">Small ideas.<br /><span>Stronger coding skills.</span></h1>
           <p className="gallery-copy">A hands-on collection of little tools and challenges. Choose a project, play around, and learn by doing.</p>
-          <div className="gallery-meta"><span><span aria-hidden="true">✳</span> 8 interactive projects</span><span aria-hidden="true" className="meta-divider">·</span><span>Made to explore</span></div>
+          <div className="gallery-meta"><span><span aria-hidden="true">✳</span> {projects.length} interactive projects</span><span aria-hidden="true" className="meta-divider">·</span><span>Made to explore</span></div>
         </section>
         <section className="project-grid" aria-label="Browse all practice projects">
           {projects.map((project, index) => (
@@ -28,7 +28,7 @@ export default function ProjectGallery() {
           ))}
         </section>
       </main>
-      <footer className="cm-project-footer"><span><strong>CodingMaxima</strong> · Learn visually. Think logically. Code confidently.</span><span className="cm-footer-label">8 INDEPENDENT PROJECTS</span></footer>
+      <footer className="cm-project-footer"><span><strong>CodingMaxima</strong> · Learn visually. Think logically. Code confidently.</span><span className="cm-footer-label">{projects.length} INDEPENDENT PROJECTS</span></footer>
     </div>
   )
 }
